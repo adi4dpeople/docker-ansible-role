@@ -3,6 +3,9 @@
 jenkins_host_vol: /data/jenkins
 jenkins_container_vol: /var/lib/jenkins/
 
+JFrog_host_vol: /data/Artifactory
+JFrog_container_vol: /data/Artifactory
+
 packages:
     - yum-utils
     - device-mapper-persistent-data
