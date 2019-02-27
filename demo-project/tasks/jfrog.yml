@@ -1,0 +1,11 @@
+- name: Run JFrog Image
+  docker_container:
+    name: JFrog
+    image: mattgruter/artifactory
+    tty: true
+    detach: yes
+    volumes:
+    - "{{ JFrog_host_vol }}:{{ JFrog_container_vol }}" 
+    state: started
+    ports: 
+    - "80:8081"
