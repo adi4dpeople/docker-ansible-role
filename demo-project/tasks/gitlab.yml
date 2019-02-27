@@ -8,4 +8,6 @@
     - "{{ GitLab_host_vol }}:{{ GitLab_contianer_vol }}" 
     state: started
     ports: 
-    - "8080:8080"
+    - "80:80"
+    - "443:443"
+    - "22:22"

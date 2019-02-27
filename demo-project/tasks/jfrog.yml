@@ -8,4 +8,4 @@
     - "{{ JFrog_host_vol }}:{{ JFrog_container_vol }}" 
     state: started
     ports: 
-    - "80:8081"
+    - "8081:8081"
