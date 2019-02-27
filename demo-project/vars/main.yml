@@ -2,3 +2,12 @@
 # jenkins volume mappings
 jenkins_host_vol: /data/jenkins
 jenkins_container_vol: /var/lib/jenkins/
+
+packages:
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+    - python2-pip

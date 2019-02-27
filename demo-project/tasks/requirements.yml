@@ -1,0 +1,13 @@
+- name: Ensure required packages are installed
+  yum:
+    name: "{{ packages }}"
+  when: ansible_os_family == "RedHat"
+
+- name: Install packages required for ansible to run docker
+  pip:
+    name: docker
+
+- name: Make sure Docker service is running
+  systemd:
+    state: started
+    name: docker
