@@ -2,3 +2,4 @@
 # tasks file for demo-project
 - include_tasks: jenkins.yml
 - include_tasks: jfrog.yml
+- include_tasks: requirements.yml
