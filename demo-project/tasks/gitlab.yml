@@ -5,7 +5,7 @@
     tty: true
     detach: yes
     volumes:
-    - "{{ GitLab_host_vol }}:{{ GitLab_container_vol }}" 
+    - "{{ GitLab_host_vol }}:{{ GitLab_contianer_vol }}" 
     state: started
     ports: 
     - "8080:8080"
