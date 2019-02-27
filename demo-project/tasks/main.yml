@@ -1,2 +1,3 @@
 ---
 # tasks file for demo-project
+- include_task: jenkins.yml

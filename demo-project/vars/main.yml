@@ -1,2 +1,4 @@
 ---
-# vars file for demo-project
+# jenkins volume mappings
+jenkins_host_vol: /data/jenkins
+jenkins_container_vol: /var/lib/jenkins/

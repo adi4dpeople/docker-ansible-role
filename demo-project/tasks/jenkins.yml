@@ -1,0 +1,11 @@
+- name: Run JenkinsCI Image
+  docker_container:
+    name: Jenkins
+    image: jenkinsci/blueocean
+    tty: true
+    detach: yes
+    volumes:
+    - "{{ jenkins_host_vol }}:{{ jenkins_container_vol }}" 
+    state: started
+    ports: 
+    - "8080:8080"
